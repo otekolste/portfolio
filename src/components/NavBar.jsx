@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 // We assign them to their own variable names
 function NavBar() {
   return (
-<nav className="bg-white fixed top-0 border-gray-200 dark:bg-gray-900">
+<nav className="bg-white w-full fixed top-0 border-gray-200 dark:bg-gray-900 z-40">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <span className="text-3xl mr-3">&lt; otekolste /&gt;</span>
     <div className="hidden w-full md:block md:w-auto" id="navbar-default">
