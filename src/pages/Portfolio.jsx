@@ -1,20 +1,20 @@
+import examples from './examples'
+import Cards from '../components/Cards'
 export default function Portfolio() {
     return (
-      <div>
-        <h1>PORTFOLIO</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-          velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-          ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-          non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-          ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-          rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-          tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-          porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-          vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus.
-        </p>
-      </div>
+    <div className="container py-16 md:py-20" id="portfolio">
+        <h2
+            className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+        >
+            My Portfolio
+        </h2>
+        <h3
+            className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+        >
+            Check out some projects I've worked on below!
+        </h3>
+        <Cards examples={examples} />
+    </div>
     );
   }
   
