@@ -9,12 +9,11 @@ export default function Card({ examples }) {
                             <ul className="list-disc ml-4">
                                 <li>{ex.pointOne}</li>
                                 <li>{ex.pointTwo}</li>
-                                <li><a href={ex.gitLink}>GitHub</a></li>
-                                <li><a href={ex.appLink}>Deployed application</a></li>
                             </ul>
-                            <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+                            <div className="relative m-2.5 overflow-hidden text-white rounded-md">
                                 <img src={ex.imgPath} alt={ex.imgAlt} />
                             </div>
+                            <div>Check it out on <a href={ex.gitLink} target="_blank" rel="noopener noreferrer">GitHub</a> or see it <a href={ex.appLink} target="_blank" rel="noopener noreferrer">live</a></div>
                     </div> 
             )}
     </div> 

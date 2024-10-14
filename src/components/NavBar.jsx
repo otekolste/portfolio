@@ -9,16 +9,6 @@ function NavBar() {
     <span className="text-white text-3xl mr-3">&lt; otekolste /&gt;</span>
     <div className="hidden w-full md:block md:w-auto" id="navbar-default">
     <ul className="nav-bar font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-      <li className="nav-item block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:p-0">
-        <NavLink
-          to="/"
-          // Check to see if current class name is active; if so, we change the color to indicate what page the user is on
-          className={({ isActive }) => 
-            `${isActive ? 'text-mid font-bold' : 'text-white'}`
-          }         >
-          Home
-        </NavLink>
-      </li>
       <li className="nav-item block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">
         <NavLink
           to="/AboutMe"

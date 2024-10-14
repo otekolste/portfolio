@@ -1,17 +1,18 @@
 const examples = [
   {
-    name: "Title",
-    pointOne: "Point 1",
-    pointTwo: "Point 2",
-    gitLink: "https://github.com/otekolste",
-    appLink: "https://github.com/otekolste",
+    name: "Answer Hive",
+    pointOne:
+      "Question-and-answer forum with a robust and intuitive tagging system",
+    pointTwo: "Built with Node.js, Express, PostgreSQL, Sequelize, TailwindCSS",
+    gitLink: "https://github.com/otekolste/answer-hive",
+    appLink: "https://answer-hive-1.onrender.com/",
     imgPath: "/src/assets/images/answerHive.png",
     imgAlt: "Screenshot",
     id: 1,
   },
   {
-    name: "Title",
-    pointOne: "Point 1",
+    name: "Blahs",
+    pointOne: "Backend",
     pointTwo: "Point 2",
     gitLink: "https://github.com/otekolste",
     appLink: "https://github.com/otekolste",
