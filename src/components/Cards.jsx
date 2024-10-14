@@ -2,11 +2,11 @@ export default function Cards({ examples }) {
     return (
         <div className="mx-auto grid w-full grid-cols-3 gap-8 pt-12 sm:w-3/4 md:gap-10">
             {examples.map((ex) => 
-                <figure className="group mx-auto md:mx-0 relative transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105" key={ex.id}>
-                    <img className="border-2 border-darkest" src={ex.imgPath} alt="image description" />
-                <div className="absolute right-0 top-0 hidden text-white bg-darkest group-hover:block">Hi!!!</div>
-                <figcaption className="px-4 text-lg bg-darkest text-white">
-                    <p>{ex.name}</p>
+                <figure className="group mx-auto md:mx-0 rounded-lg bg-darkest relative transition-all duration-300 cursor-pointer hover:scale-105" key={ex.id}>
+                    <img className="group-hover:opacity-0 rounded-lg" src={ex.imgPath} alt={ex.imgAlt} />
+                <figcaption className="hidden group-hover:block px-4 absolute inset-0 text-center top-1/3 text-lg text-white">
+                    <h1 className="font-semibold uppercase">{ex.name}</h1>
+                    <a href={ex.gitLink}><i className="bx bxl-github text-4xl text-white hover:text-gray-200"></i></a>
                 </figcaption>
                 </figure>
             )}
