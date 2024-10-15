@@ -1,30 +1,20 @@
 export default function Footer() {
     return (
         <footer>
-    <div className="flex w-full items-center justify-center pt-5 pl-2 sm:pt-0">
-        <a href="/">
+    <div className="flex w-full bg-darkest items-center justify-center pt-5 pl-2 sm:pt-0">
+        <a href="https://www.linkedin.com/in/olivia-te-kolste-627123225/" className="pl-4">
           <i
-            className="bx bxl-facebook-square text-2xl text-gray-900 hover:text-yellow"
+            className="bx bxl-linkedin text-2xl text-white hover:text-mid"
           ></i>
         </a>
-        <a href="/" className="pl-4">
+        <a href="https://github.com/otekolste" className="pl-4">
           <i
-            className="bx bxl-twitter text-2xl text-gray-900 hover:text-yellow"
+            className="bx bxl-github text-2xl text-white hover:text-mid"
           ></i>
         </a>
-        <a href="/" className="pl-4">
+        <a href="https://www.facebook.com/p/Olivia-Te-Kolste-100007064492674/" className="pl-4">
           <i
-            className="bx bxl-dribbble text-2xl text-gray-900 hover:text-yellow"
-          ></i>
-        </a>
-        <a href="/" className="pl-4">
-          <i
-            className="bx bxl-linkedin text-2xl text-gray-900 hover:text-yellow"
-          ></i>
-        </a>
-        <a href="/" className="pl-4">
-          <i
-            className="bx bxl-instagram text-2xl text-gray-900 hover:text-yellow"
+            className="bx bxl-facebook-square text-2xl text-white hover:text-mid"
           ></i>
         </a>
       </div>
