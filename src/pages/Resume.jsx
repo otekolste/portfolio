@@ -1,20 +1,31 @@
-export default function Resume() {
+export default function AboutMe() {
     return (
-      <div>
-        <h1>RESUME</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-          velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-          ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-          non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-          ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-          rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-          tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-          porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-          vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus.
-        </p>
-      </div>
+        <div className="container py-16 md:py-20" id="resume">
+            <div className="flex flex-col mb-8 justify-center md:divide-x-2 w-3/4 mx-auto sm:flex-row sm:divide-x-0">
+                <div className="text-center flex-1 flex flex-col gap-y-2 p-16">
+                    <i className="bx bx-desktop bx-xl text-5xl bg-mid rounded-full p-4 self-center"></i>
+                    <h1 className="text-3xl font-semibold uppercase">Frontend</h1>
+                    <ul className="text-xl">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Tailwind</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div className="text-center flex-1 flex flex-col gap-y-2 p-16">
+                    <i className="bx bx-terminal bx-xl text-5xl bg-mid rounded-full p-4 self-center"></i>
+                    <h1 className="text-3xl font-semibold uppercase">Backend</h1>
+                    <ul className="text-xl">
+                        <li>APIs</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>PostgreSQL, Sequelize</li>
+                        <li>MongoDB, Mongoose</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     );
   }
   

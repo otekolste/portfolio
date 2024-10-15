@@ -1,8 +1,7 @@
 export default function Footer() {
     return (
-        <div
-        className="flex w-full items-center justify-center pt-5 pl-2 sm:pt-0"
-      >
+        <footer>
+    <div className="flex w-full items-center justify-center pt-5 pl-2 sm:pt-0">
         <a href="/">
           <i
             className="bx bxl-facebook-square text-2xl text-gray-900 hover:text-yellow"
@@ -29,5 +28,7 @@ export default function Footer() {
           ></i>
         </a>
       </div>
+        </footer>
+
     )
 }

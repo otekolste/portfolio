@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Nav />
-      <main>
+      <main className="w-screen">
         <Outlet />
       </main>
       <Footer />
