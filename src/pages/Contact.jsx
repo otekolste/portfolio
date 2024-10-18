@@ -7,7 +7,7 @@ export default function Countact() {
       </h2>
       <form className="group mx-auto w-full pt-10 sm:w-3/4">
         <div className="flex flex-col md:flex-row">
-          <div className="w-full md:w-1/2 md:mt-0 md:ml-3 md:w-1/2 lg:ml-5">
+          <div className="w-full md:w-1/2 md:mt-0 md:w-1/2">
             <input
               aria-label="name"
               className="mr-3 w-full rounded border border-grey-50 px-4 py-3 font-body text-black"
