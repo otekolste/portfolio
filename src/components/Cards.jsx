@@ -13,9 +13,9 @@ export default function Cards({ examples }) {
           />
           <div className="hidden absolute inset-0 group-hover:flex flex-col items-center justify-center text-center px-4 text-m text-lightest">
             <a href={ex.appLink}>
-              <h1 className="font-semibold uppercase hover:text-mid">
+              <h2 className="font-semibold uppercase text-lightest hover:text-mid">
                 {ex.name}
-              </h1>
+              </h2>
             </a>
             <h2 className="text-xs">{ex.pointTwo}</h2>
             <a href={ex.gitLink}>

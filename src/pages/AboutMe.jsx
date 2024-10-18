@@ -2,7 +2,7 @@ import "boxicons";
 export default function AboutMe() {
   return (
     <div className="container mx-auto relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">
-      <div className="flex flex-colitems-center justify-center lg:flex-row">
+      <div className="flex flex-col items-center justify-center md:flex-row lg:flex-row">
         <div className="rounded-full size-80 flex-shrink-0 border-8 border-lightest shadow-xl">
           <img
             src="/src/assets/images/headshot.jpg"
