@@ -24,7 +24,7 @@ export default function AboutMe() {
                 languages and a solid foundation for computing skills. I am
                 currently completing edX's full stack developer course in order
                 to hone my skills with regards to developing web applications
-                with hands-on experience. Throughoug my coding journey, I have
+                with hands-on experience. Throughout my coding journey, I have
                 gained experience in JavaScript, HTML, CSS, PostgreSQL, as well
                 as Java and Python. Recently, I have been creating projects
                 using Node.js, MongoDB, React, and TailwindCSS. I love tackling
