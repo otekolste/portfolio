@@ -40,8 +40,8 @@ function NavBar() {
           className={`w-full md:block md:w-auto ${isOpen ? "block" : "hidden"}`}
           id="navbar-default"
         >
-          <ul className="nav-bar font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-            <li className="nav-item block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">
+          <ul className="nav-bar font-medium flex flex-col p-4 md:p-0 mt-4 bg-darkest md:bg-transparent border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+            <li className="nav-item block py-2 px-3 rounded hover:bg-dark md:hover:bg-transparent md:border-0 md:p-0">
               <NavLink
                 to="/AboutMe"
                 // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
@@ -54,7 +54,7 @@ function NavBar() {
                 About
               </NavLink>
             </li>
-            <li className="nav-item block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">
+            <li className="nav-item block py-2 px-3 rounded hover:bg-dark md:hover:bg-transparent md:border-0 md:p-0">
               <NavLink
                 to="/Contact"
                 // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
@@ -67,7 +67,7 @@ function NavBar() {
                 Contact
               </NavLink>
             </li>
-            <li className="nav-item block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">
+            <li className="nav-item block py-2 px-3 rounded hover:bg-dark md:hover:bg-transparent md:border-0 md:p-0">
               <NavLink
                 to="/Portfolio"
                 // Check to see if the currentPage is `Portfolio`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
@@ -80,7 +80,7 @@ function NavBar() {
                 Portfolio
               </NavLink>
             </li>
-            <li className="nav-item block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">
+            <li className="nav-item block py-2 px-3 rounded hover:bg-dark md:hover:bg-transparent md:border-0 md:p-0">
               <NavLink
                 to="/Resume"
                 // Check to see if the currentPage is `Resume`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link

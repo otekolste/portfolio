@@ -17,6 +17,12 @@ export default function Footer() {
         >
           <i className="bx bxl-facebook-square text-2xl text-lightest hover:text-light"></i>
         </a>
+        <a
+          href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/"
+          className="text-lightest hover:text-light pl-4"
+        >
+          Background source
+        </a>
       </div>
     </footer>
   );
