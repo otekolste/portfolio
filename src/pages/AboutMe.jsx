@@ -5,7 +5,7 @@ export default function AboutMe() {
       <div className="flex flex-col items-center justify-center md:flex-row lg:flex-row">
         <div className="rounded-full size-80 flex-shrink-0 border-8 border-lightest shadow-xl">
           <img
-            src="/src/assets/images/headshot.jpg"
+            src="/dist/images/headshot.jpg"
             className="flex-shrink-0h-48 rounded-full"
             alt="Olivia's headshot"
           />
