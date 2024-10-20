@@ -9,7 +9,7 @@ function NavBar() {
   return (
     <nav className="w-full absolute top-0 z-40">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <span className="text-lightest text-3xl mr-3">
+        <span className="text-lightest text-3xl mr-3 hidden md:block">
           &lt; otekolste /&gt;
         </span>
         <button

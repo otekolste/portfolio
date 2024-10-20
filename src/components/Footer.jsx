@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer>
-      <div className="flex w-full items-center justify-center pt-5 pl-2 sm:pt-0 absolute bottom-0">
+      <div className="flex w-full items-center justify-center pt-5 pl-2 sm:pt-0 bg-darkest md:bg-transparent fixed bottom-0 z-30">
         <a
           href="https://www.linkedin.com/in/olivia-te-kolste-627123225/"
           className="pl-4"
