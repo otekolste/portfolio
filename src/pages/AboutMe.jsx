@@ -16,7 +16,7 @@ export default function AboutMe() {
           </h1>
           <div className="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start">
             <div className="flex items-center justify-center pl-0 sm:justify-start md:pl-1">
-              <p className="font-body text-lg  text-lightest">
+              <p className="font-body text-lg mx-2 text-lightest">
                 I'm an aspiring full-stack developer based in North Carolina!
                 After discovering a passion for coding in high school, I
                 obtained a Bachelor of Arts in computer science from Emory

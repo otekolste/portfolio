@@ -8,13 +8,13 @@ function App() {
   return (
     <>
       <div
-        className="h-screen bg-center bg-repeat flex flex-col justify-center"
+        className="min-h-screen bg-center w-screen bg-repeat flex flex-col justify-center"
         style={{
           backgroundImage: `url(${Background})`,
         }}
       >
         <Nav />
-        <main className="w-screen flex min-h-screen justify-center items-center">
+        <main className="flex justify-center items-center">
           <Outlet />
         </main>
         <Footer />
