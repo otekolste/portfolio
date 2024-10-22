@@ -7,7 +7,7 @@
 
 ## Description
 
-This is a portfolio site for myself hosted using Netlify and built using React and TailwindCSS. It was built to showcase my skills in web design and development, display some projects I have worked on, and link my resume, so I can use it in a professional capacity!
+This is a portfolio site for myself hosted using Netlify and built using React and TailwindCSS. It also uses React Router to implement different pages. It was built to showcase my skills in web design and development, display some projects I have worked on, and link my resume, so I can use it in a professional capacity!
 
 ## Usage
 
