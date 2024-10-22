@@ -21,6 +21,7 @@ Additionally, this site was created to be responsive - feel free to check it out
 ## Credits
 
 * [Tutorial used for implementing form validation](https://dev.to/deyemiobaa/adding-custom-validation-to-a-form-with-tailwindcss-1e7d)
+* [Background pattern](https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/)
 
 For a complete list of packages used, check the package.json file at the root of the directory.
 
