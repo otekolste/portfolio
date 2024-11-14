@@ -1,5 +1,5 @@
 // https://dev.to/deyemiobaa/adding-custom-validation-to-a-form-with-tailwindcss-1e7d
-export default function Countact() {
+export default function Contact() {
   return (
     <div className="container py-16 md:py-20" id="contact">
       <h2 className="text-center text-lightest font-header text-4xl font-semibold uppercase">
@@ -10,12 +10,15 @@ export default function Countact() {
           <div className="w-full md:w-1/2 md:mt-0 md:w-1/2">
             <input
               aria-label="name"
-              className="mr-3 w-full rounded border border-grey-50 px-4 py-3 font-body text-black"
+              className="peer/name mr-3 w-full rounded border border-grey-50 px-4 py-3 font-body text-black required:[&:not(:placeholder-shown):not(:focus)]:border-red-500"
               placeholder="Name"
               type="text"
               id="name"
               required
             />
+            <span className="mt-2 ml-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):required]/name:block">
+              Please enter a name
+            </span>
           </div>
           <div className="w-full md:w-1/2 md:mt-0 md:ml-3 md:w-1/2 lg:ml-5">
             <input
