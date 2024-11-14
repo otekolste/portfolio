@@ -1,5 +1,5 @@
-// https://dev.to/deyemiobaa/adding-custom-validation-to-a-form-with-tailwindcss-1e7d
-export default function Contact() {
+// tutorial for form validation: https://dev.to/deyemiobaa/adding-custom-validation-to-a-form-with-tailwindcss-1e7d
+export default function Countact() {
   return (
     <div className="container py-16 md:py-20" id="contact">
       <h2 className="text-center text-lightest font-header text-4xl font-semibold uppercase">
