@@ -1,11 +1,52 @@
 // tutorial for form validation: https://dev.to/deyemiobaa/adding-custom-validation-to-a-form-with-tailwindcss-1e7d
+// tutorial for email.js setup: https://medium.com/@thomasaugot/create-a-react-contact-form-with-email-js-cad2c8606f33
+
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
+
 export default function Countact() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [stateMessage, setStateMessage] = useState(null);
+  const sendEmail = (e) => {
+    e.persist();
+    e.preventDefault();
+    setIsSubmitting(true);
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        e.target,
+        import.meta.env.VITE_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          setStateMessage("Message sent!");
+          setIsSubmitting(false);
+          setTimeout(() => {
+            setStateMessage(null);
+          }, 5000); // hide message after 5 seconds
+        },
+        (error) => {
+          setStateMessage("Something went wrong, please try again later");
+          setIsSubmitting(false);
+          setTimeout(() => {
+            setStateMessage(null);
+          }, 5000); // hide message after 5 seconds
+        }
+      );
+
+    // Clears the form after sending the email
+    e.target.reset();
+  };
   return (
     <div className="container py-16 md:py-20" id="contact">
       <h2 className="text-center text-lightest font-header text-4xl font-semibold uppercase">
         Let's get in touch!
       </h2>
-      <form className="group mx-auto w-full pt-10 sm:w-3/4">
+      <form
+        onSubmit={sendEmail}
+        className="group mx-auto w-full pt-10 sm:w-3/4"
+      >
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 md:mt-0 md:w-1/2">
             <input
@@ -44,13 +85,16 @@ export default function Countact() {
           rows="10"
           required
         ></textarea>
-        <button className="mt-6 flex items-center justify-center rounded bg-dark px-8 py-3 font-header text-lg font-bold uppercase text-lightest hover:bg-darkest group-invalid:pointer-events-none group-invalid:opacity-30">
-          Send
-          <i className="bx bx-chevron-right relative -right-2 text-3xl"></i>
-        </button>
+        <input
+          type="submit"
+          value="Send"
+          disabled={isSubmitting}
+          className="mt-6 flex items-center cursor-pointer justify-center rounded bg-dark px-8 py-3 font-header text-lg font-bold uppercase text-lightest hover:bg-darkest group-invalid:pointer-events-none group-invalid:opacity-30"
+        />
+        {stateMessage && <p className="text-lightest">{stateMessage}</p>}
       </form>
       <h2 className="text-center text-lightest font-header text-2xl font-semibold uppercase">
-        Or, send me an email:{" "}
+        Or, send me an email directly:{" "}
         <span className="lowercase text-light">oliviatekolste@gmail.com</span>
       </h2>
     </div>
