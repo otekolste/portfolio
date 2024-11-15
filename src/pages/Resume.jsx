@@ -23,6 +23,7 @@ export default function AboutMe() {
               <li>Javascript</li>
               <li>Tailwind</li>
               <li>React</li>
+              <li>Bootstrap</li>
             </ul>
           </div>
           <div className="text-center text-lightest flex-1 flex flex-col gap-y-2 p-16">
@@ -32,8 +33,11 @@ export default function AboutMe() {
               <li>APIs</li>
               <li>Node.js</li>
               <li>Express</li>
-              <li>PostgreSQL, Sequelize</li>
-              <li>MongoDB, Mongoose</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>Handlebars</li>
+              <li>Webpack</li>
+              <li>GraphQL</li>
             </ul>
           </div>
         </div>

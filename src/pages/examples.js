@@ -27,7 +27,7 @@ const examples = [
     pointTwo: "Node.js, Express, MongoDB, TailwindCSS, React",
     gitLink: "https://github.com/HashemE1999/locus",
     appLink: "https://locus-qslj.onrender.com/",
-    imgPath: "./images/locus",
+    imgPath: "./images/locus.png",
     imgAlt: "Locus homepage",
     id: 3,
   },
