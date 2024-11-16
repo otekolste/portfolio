@@ -38,6 +38,7 @@ export default function AboutMe() {
               <li>Handlebars</li>
               <li>Webpack</li>
               <li>GraphQL</li>
+              <li>Python</li>
             </ul>
           </div>
         </div>
